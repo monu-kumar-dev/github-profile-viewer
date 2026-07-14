@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0d1117;
+  --card: #161b22;
+  --border: #30363d;
+  --primary: #238636;
+  --primary-hover: #2ea043;
+  --text: #f0f6fc;
+  --secondary: #8b949e;
+  --error: #f85149;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-container {
+  width: min(600px, 95%);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+.input_section {
+  display: flex;
+  gap: 12px;
+}
+
+.input_section input {
+  flex: 1;
+  height: 45px;
+  padding: 0 14px;
+  font-size: 16px;
+
+  background: #0d1117;
+  color: white;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  outline: none;
+
+  transition: .3s;
+}
+
+.input_section input::placeholder {
+  color: var(--secondary);
+}
+
+.input_section input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(35, 134, 54, .2);
+}
+
+.input_section button {
+  width: 45px;
+  height: 45px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: var(--primary);
+  color: white;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.input_section button:hover {
+  background: var(--primary-hover);
+}
+
+.input_section button:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+
+.result_section {
+  margin-top: 25px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.img {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid var(--primary);
+}
+
+.profile-card p {
+  width: 100%;
+  padding: 10px 12px;
+
+  background: #0d1117;
+
+  border-radius: 8px;
+  border: 1px solid var(--border);
+
+  line-height: 1.5;
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.error {
+  color: var(--error);
+} 
