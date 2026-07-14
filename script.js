@@ -13,7 +13,8 @@ function renderProfile(data) {
   resultSection.innerHTML = "";
 
   const userData = document.createElement("div");
-
+  userData.classList.add("profile-card");
+  
   const avatar = document.createElement("img");
   avatar.src = data.avatar_url;
   avatar.classList.add("img");
