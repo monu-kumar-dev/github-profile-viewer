@@ -1,92 +1,75 @@
 ````md
 # GitHub Profile Finder
 
-A simple and responsive web application that allows users to search for any GitHub profile and view public information using the GitHub REST API.
+A simple and responsive web application that allows users to search for any GitHub profile using the GitHub REST API.
 
-## 🚀 Live Demo
+## Live Demo
 
 https://github-profile-viewer-chi-ten.vercel.app/
 
----
-
-## 📌 Features
+## Features
 
 - Search any GitHub username
 - Display profile picture
-- Show name and username
-- Display bio
-- Show followers and following count
-- Display public repositories count
-- Show location information
+- Show name, username, and bio
+- Display followers and following
+- Show public repositories count
+- Display location
 - Loading indicator while fetching data
 - Error handling for invalid usernames
-- Responsive user interface
+- Responsive design
 
----
-
-## 🛠️ Built With
+## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript (ES6+)
 - GitHub REST API
 
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```text
-GitHub-Profile-Finder/
+github-profile-viewer/
 │── index.html
 │── style.css
 │── script.js
 │── README.md
 ```
 
----
+## Getting Started
 
-## ⚙️ Getting Started
-
-1. Clone the repository
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-github-username/GitHub-Profile-Finder.git
+git clone https://github.com/monu-kumar-dev/github-profile-viewer.git
 ```
 
-2. Open the project folder.
+Go to the project folder:
 
-3. Open `index.html` in your browser.
+```bash
+cd github-profile-viewer
+```
 
-No additional installation is required.
+Open `index.html` in your browser.
 
----
-
-## 🔗 GitHub API
-
-This project uses the GitHub Users API.
-
-Example:
+## GitHub API
 
 ```text
 https://api.github.com/users/octocat
 ```
 
----
-
-## 📚 What I Learned
+## What I Learned
 
 - Fetch API
 - Async / Await
-- API Integration
+- REST API Integration
 - JSON Handling
 - DOM Manipulation
 - Event Handling
 - Error Handling
 - Responsive Web Design
 
----
-
-## 🚀 Future Improvements
+## Future Improvements
 
 - Dark / Light Mode
 - Recent Search History
@@ -94,11 +77,9 @@ https://api.github.com/users/octocat
 - Repository Search
 - Better UI Animations
 
----
-
-## 👨‍💻 Author
+## Author
 
 **Monu Kumar**
 
----
+GitHub: https://github.com/monu-kumar-dev
 ````
